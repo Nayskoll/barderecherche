@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar de Recherche</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; display: flex; }
+        #left-panel { flex: 1; padding-right: 20px; }
+        #right-panel { flex: 1; }
+        #addressInputs { margin-bottom: 20px; }
+        #map { width: 100%; height: 600px; border: none; }
+        #barList { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div id="left-panel">
+        <h1>Bar de Recherche</h1>
+        <div id="addressInputs">
+            <label for="numAddresses">Combien d'adresses voulez-vous entrer (1-5) ?</label>
+            <input type="number" id="numAddresses" min="1" max="5" value="1">
+            <button onclick="generateAddressInputs()">Valider</button>
+        </div>
+        <div id="addressFields"></div>
+        <button onclick="generateMap()" style="display:none;" id="generateMapBtn">Générer la carte</button>
+        <div id="result"></div>
+        <iframe id="map" style="display:none;"></iframe>
+    </div>
+    <div id="right-panel">
+        <h2>Liste des bars</h2>
+        <div id="barList"></div>
+    </div>
+
+    <script>
+        function generateAddressInputs() {
+            const num = document.getElementById('numAddresses').value;
+            let fields = '';
+            for (let i = 1; i <= num; i++) {
+                fields += `<div><label for="address${i}">Adresse ${i}:</label>
+                           <input type="text" id="address${i}"></div>`;
+            }
+            document.getElementById('addressFields').innerHTML = fields;
+            document.getElementById('generateMapBtn').style.display = 'block';
+        }
+
+        function generateMap() {
+            const addresses = [];
+            const inputs = document.querySelectorAll('#addressFields input');
+            inputs.forEach(input => addresses.push(input.value));
+
+            $.ajax({
+                url: '/generate_map',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({addresses: addresses}),
+                success: function(response) {
+                    if (response.status === 'success') {
+                        document.getElementById('result').innerHTML = response.message;
+                        document.getElementById('map').src = '/get_map';
+                        document.getElementById('map').style.display = 'block';
+                        displayBarList(response.bars);
+                    } else {
+                        document.getElementById('result').innerHTML = response.message;
+                    }
+                },
+                error: function() {
+                    document.getElementById('result').innerHTML = "Une erreur s'est produite";
+                }
+            });
+        }
+
+        function displayBarList(bars) {
+            let barListHtml = '<ul>';
+            bars.forEach((bar, index) => {
+                barListHtml += `<li><strong>${index + 1}. ${bar.name}</strong><br>${bar.vicinity}</li>`;
+            });
+            barListHtml += '</ul>';
+            document.getElementById('barList').innerHTML = barListHtml;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_43b6f3d0b7150204ef15e8a562312e0d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_43b6f3d0b7150204ef15e8a562312e0d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_43b6f3d0b7150204ef15e8a562312e0d = L.map(
+                "map_43b6f3d0b7150204ef15e8a562312e0d",
+                {
+                    center: [48.8537198, 2.376032433333333],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9ec3a2250eb7b994d53a7de1cc589f31 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9ec3a2250eb7b994d53a7de1cc589f31.addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var marker_1636ac651c0554f2e2cc33c2e15ee3b5 = L.marker(
+                [48.8575776, 2.3763597],
+                {}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var icon_6c88d28399da4b3d8579724d9d8269b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1636ac651c0554f2e2cc33c2e15ee3b5.setIcon(icon_6c88d28399da4b3d8579724d9d8269b2);
+        
+    
+        var popup_261590cf82346c3b0c6fa0a364ec58cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04ca8117eaa78df2bf1e2a6ecc2a5532 = $(`<div id="html_04ca8117eaa78df2bf1e2a6ecc2a5532" style="width: 100.0%; height: 100.0%;">Adresse 1</div>`)[0];
+                popup_261590cf82346c3b0c6fa0a364ec58cd.setContent(html_04ca8117eaa78df2bf1e2a6ecc2a5532);
+            
+        
+
+        marker_1636ac651c0554f2e2cc33c2e15ee3b5.bindPopup(popup_261590cf82346c3b0c6fa0a364ec58cd)
+        ;
+
+        
+    
+    
+            var marker_b374be536867f0d96ea4857c58a0b0eb = L.marker(
+                [48.8556039, 2.3638106],
+                {}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var icon_660310df44cf21f1d5b11dfed796e300 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b374be536867f0d96ea4857c58a0b0eb.setIcon(icon_660310df44cf21f1d5b11dfed796e300);
+        
+    
+        var popup_3a63ed77c3c6324786f6e01772e36ed2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5bff21fe6e49da4f956d8e0c80a4e45 = $(`<div id="html_b5bff21fe6e49da4f956d8e0c80a4e45" style="width: 100.0%; height: 100.0%;">Adresse 2</div>`)[0];
+                popup_3a63ed77c3c6324786f6e01772e36ed2.setContent(html_b5bff21fe6e49da4f956d8e0c80a4e45);
+            
+        
+
+        marker_b374be536867f0d96ea4857c58a0b0eb.bindPopup(popup_3a63ed77c3c6324786f6e01772e36ed2)
+        ;
+
+        
+    
+    
+            var marker_8c98ae129d415b4f3a0c5d2dc06e4460 = L.marker(
+                [48.8479779, 2.387927],
+                {}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var icon_843915ffe02113cb45ed297f8e5819d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8c98ae129d415b4f3a0c5d2dc06e4460.setIcon(icon_843915ffe02113cb45ed297f8e5819d9);
+        
+    
+        var popup_fd8c0d458ab2cbc3c28489be9d2d3408 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae6ec19f17966847ffdb8e28dc67bc85 = $(`<div id="html_ae6ec19f17966847ffdb8e28dc67bc85" style="width: 100.0%; height: 100.0%;">Adresse 3</div>`)[0];
+                popup_fd8c0d458ab2cbc3c28489be9d2d3408.setContent(html_ae6ec19f17966847ffdb8e28dc67bc85);
+            
+        
+
+        marker_8c98ae129d415b4f3a0c5d2dc06e4460.bindPopup(popup_fd8c0d458ab2cbc3c28489be9d2d3408)
+        ;
+
+        
+    
+    
+            var marker_dabf6e2ef37829937ffca0e7d24fdf18 = L.marker(
+                [48.85720269999999, 2.375594],
+                {}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var icon_0f5f673adc437c7697094edb8374d92d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_dabf6e2ef37829937ffca0e7d24fdf18.setIcon(icon_0f5f673adc437c7697094edb8374d92d);
+        
+    
+        var popup_8d1622aae7cf2e783342ec58373f80bb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_450af973b7ead67e0d232b3e472cd934 = $(`<div id="html_450af973b7ead67e0d232b3e472cd934" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; font-size: 14px; width: 250px;">             <h3 style="margin-bottom: 5px;">Les Mauvais Joueurs Bastille, bar à jeux</h3>             <p style="margin-top: 0;"><strong>Note :</strong> 4.6/5 (437 avis)</p>             <p><strong>Adresse :</strong> 46 Rue Sedaine, Paris</p>             <p><strong>Description :</strong> Pas de description disponible</p>         </div>         </div>`)[0];
+                popup_8d1622aae7cf2e783342ec58373f80bb.setContent(html_450af973b7ead67e0d232b3e472cd934);
+            
+        
+
+        marker_dabf6e2ef37829937ffca0e7d24fdf18.bindPopup(popup_8d1622aae7cf2e783342ec58373f80bb)
+        ;
+
+        
+    
+    
+            var marker_dd99ee58d53fb72f2ef522c9c48e4118 = L.marker(
+                [48.8534233, 2.3705688],
+                {}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var icon_4cbfecf7fa7de8d75857daadb4275324 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_dd99ee58d53fb72f2ef522c9c48e4118.setIcon(icon_4cbfecf7fa7de8d75857daadb4275324);
+        
+    
+        var popup_f08a463bc74746e27946f85edfc62e29 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_baee2b068b5c84b5e97efbcf86ca68d7 = $(`<div id="html_baee2b068b5c84b5e97efbcf86ca68d7" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; font-size: 14px; width: 250px;">             <h3 style="margin-bottom: 5px;">Oh La La ! Bar - Paris Bastille</h3>             <p style="margin-top: 0;"><strong>Note :</strong> 4.2/5 (43 avis)</p>             <p><strong>Adresse :</strong> 6 Rue de la Roquette, Paris</p>             <p><strong>Description :</strong> Pas de description disponible</p>         </div>         </div>`)[0];
+                popup_f08a463bc74746e27946f85edfc62e29.setContent(html_baee2b068b5c84b5e97efbcf86ca68d7);
+            
+        
+
+        marker_dd99ee58d53fb72f2ef522c9c48e4118.bindPopup(popup_f08a463bc74746e27946f85edfc62e29)
+        ;
+
+        
+    
+    
+            var marker_6297dd97b6dc98b7c9335ddec1f150fe = L.marker(
+                [48.8539745, 2.3723012],
+                {}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var icon_b60cc2c28bffd47014d6eff3832a1947 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6297dd97b6dc98b7c9335ddec1f150fe.setIcon(icon_b60cc2c28bffd47014d6eff3832a1947);
+        
+    
+        var popup_6bc76e79c82e474982a3a8e28fbce88d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2bc86c2b88077cbe2e7341dfe5c843b7 = $(`<div id="html_2bc86c2b88077cbe2e7341dfe5c843b7" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; font-size: 14px; width: 250px;">             <h3 style="margin-bottom: 5px;">Mad Sports Bar</h3>             <p style="margin-top: 0;"><strong>Note :</strong> 4.6/5 (116 avis)</p>             <p><strong>Adresse :</strong> 11 Rue de Lappe, Paris</p>             <p><strong>Description :</strong> Pas de description disponible</p>         </div>         </div>`)[0];
+                popup_6bc76e79c82e474982a3a8e28fbce88d.setContent(html_2bc86c2b88077cbe2e7341dfe5c843b7);
+            
+        
+
+        marker_6297dd97b6dc98b7c9335ddec1f150fe.bindPopup(popup_6bc76e79c82e474982a3a8e28fbce88d)
+        ;
+
+        
+    
+    
+            var marker_051d51944b1c4b38a61dfea0514a97ea = L.marker(
+                [48.8539745, 2.3723012],
+                {}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var icon_2b7ee1dd1934d4067cdac57b22153881 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_051d51944b1c4b38a61dfea0514a97ea.setIcon(icon_2b7ee1dd1934d4067cdac57b22153881);
+        
+    
+        var popup_bf01d06eaf0a72ee784443e539713214 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b0badfd9323cfe52f3d6d241c51d0856 = $(`<div id="html_b0badfd9323cfe52f3d6d241c51d0856" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; font-size: 14px; width: 250px;">             <h3 style="margin-bottom: 5px;">Mad Sports Bar</h3>             <p style="margin-top: 0;"><strong>Note :</strong> 4.6/5 (116 avis)</p>             <p><strong>Adresse :</strong> 11 Rue de Lappe, Paris</p>             <p><strong>Description :</strong> Pas de description disponible</p>         </div>         </div>`)[0];
+                popup_bf01d06eaf0a72ee784443e539713214.setContent(html_b0badfd9323cfe52f3d6d241c51d0856);
+            
+        
+
+        marker_051d51944b1c4b38a61dfea0514a97ea.bindPopup(popup_bf01d06eaf0a72ee784443e539713214)
+        ;
+
+        
+    
+    
+            var marker_a988383b6d3bd48371de5b171635c72b = L.marker(
+                [48.8538751, 2.372281],
+                {}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var icon_84615fd4db39eae57d14d7ad78bab1bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a988383b6d3bd48371de5b171635c72b.setIcon(icon_84615fd4db39eae57d14d7ad78bab1bb);
+        
+    
+        var popup_f662a47842bb3767f1400af640f427fa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_720c7739ce99189bf15dd6a2da411b54 = $(`<div id="html_720c7739ce99189bf15dd6a2da411b54" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; font-size: 14px; width: 250px;">             <h3 style="margin-bottom: 5px;">Bar des Ferrailleurs</h3>             <p style="margin-top: 0;"><strong>Note :</strong> 4.5/5 (427 avis)</p>             <p><strong>Adresse :</strong> 18 Rue de Lappe, Paris</p>             <p><strong>Description :</strong> Pas de description disponible</p>         </div>         </div>`)[0];
+                popup_f662a47842bb3767f1400af640f427fa.setContent(html_720c7739ce99189bf15dd6a2da411b54);
+            
+        
+
+        marker_a988383b6d3bd48371de5b171635c72b.bindPopup(popup_f662a47842bb3767f1400af640f427fa)
+        ;
+
+        
+    
+    
+            var marker_118359a195cbeb279c97536326fd0c41 = L.marker(
+                [48.8538751, 2.372281],
+                {}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var icon_7e5a1e7c8392dc7501cd94281366bcde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_118359a195cbeb279c97536326fd0c41.setIcon(icon_7e5a1e7c8392dc7501cd94281366bcde);
+        
+    
+        var popup_85edb465fd5ab30dafe12d5dd648ef64 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_805f7e97ab127993a9615508715e201b = $(`<div id="html_805f7e97ab127993a9615508715e201b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; font-size: 14px; width: 250px;">             <h3 style="margin-bottom: 5px;">Bar des Ferrailleurs</h3>             <p style="margin-top: 0;"><strong>Note :</strong> 4.5/5 (427 avis)</p>             <p><strong>Adresse :</strong> 18 Rue de Lappe, Paris</p>             <p><strong>Description :</strong> Pas de description disponible</p>         </div>         </div>`)[0];
+                popup_85edb465fd5ab30dafe12d5dd648ef64.setContent(html_805f7e97ab127993a9615508715e201b);
+            
+        
+
+        marker_118359a195cbeb279c97536326fd0c41.bindPopup(popup_85edb465fd5ab30dafe12d5dd648ef64)
+        ;
+
+        
+    
+    
+            var marker_a9cf3fe6678e96e5b6d1db9654b8e18d = L.marker(
+                [48.85375639999999, 2.3726678],
+                {}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var icon_c994e682083c0391d14f9f59bc1ab653 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a9cf3fe6678e96e5b6d1db9654b8e18d.setIcon(icon_c994e682083c0391d14f9f59bc1ab653);
+        
+    
+        var popup_dd486bec88e704cd4a5b34b2e5aa1f03 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_54b27b001991ead37a1b46b5fbe5d2f0 = $(`<div id="html_54b27b001991ead37a1b46b5fbe5d2f0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; font-size: 14px; width: 250px;">             <h3 style="margin-bottom: 5px;">BDF PARIS</h3>             <p style="margin-top: 0;"><strong>Note :</strong> 4.3/5 (220 avis)</p>             <p><strong>Adresse :</strong> 21 Rue de Lappe, Paris</p>             <p><strong>Description :</strong> Pas de description disponible</p>         </div>         </div>`)[0];
+                popup_dd486bec88e704cd4a5b34b2e5aa1f03.setContent(html_54b27b001991ead37a1b46b5fbe5d2f0);
+            
+        
+
+        marker_a9cf3fe6678e96e5b6d1db9654b8e18d.bindPopup(popup_dd486bec88e704cd4a5b34b2e5aa1f03)
+        ;
+
+        
+    
+    
+            var marker_5ab56643e0a135ac2575af4ed6be380b = L.marker(
+                [48.85603159999999, 2.3754824],
+                {}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var icon_4d2001ce4eb959b659524865a487dcf9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5ab56643e0a135ac2575af4ed6be380b.setIcon(icon_4d2001ce4eb959b659524865a487dcf9);
+        
+    
+        var popup_5d3956e19bfda2401222a265e23f5a38 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_87bfdb11cbabe7e01abc444350f6d5d6 = $(`<div id="html_87bfdb11cbabe7e01abc444350f6d5d6" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; font-size: 14px; width: 250px;">             <h3 style="margin-bottom: 5px;">The Bootleg Bar</h3>             <p style="margin-top: 0;"><strong>Note :</strong> 4.3/5 (348 avis)</p>             <p><strong>Adresse :</strong> 55 Rue de la Roquette, Paris</p>             <p><strong>Description :</strong> Traditional cocktails & bar bites served in a laid-back atmosphere with pool & darts.</p>         </div>         </div>`)[0];
+                popup_5d3956e19bfda2401222a265e23f5a38.setContent(html_87bfdb11cbabe7e01abc444350f6d5d6);
+            
+        
+
+        marker_5ab56643e0a135ac2575af4ed6be380b.bindPopup(popup_5d3956e19bfda2401222a265e23f5a38)
+        ;
+
+        
+    
+    
+            var marker_07183e86dede9e0791be9f03acf33ccb = L.marker(
+                [48.8533408, 2.3733557],
+                {}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var icon_8b7cd1fbdd3e53eb833db1bf8ebccc20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_07183e86dede9e0791be9f03acf33ccb.setIcon(icon_8b7cd1fbdd3e53eb833db1bf8ebccc20);
+        
+    
+        var popup_551dbdaba13f88ca2fe13a7658dc1d47 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f3794d459e582fcfb7b206e331aecae9 = $(`<div id="html_f3794d459e582fcfb7b206e331aecae9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; font-size: 14px; width: 250px;">             <h3 style="margin-bottom: 5px;">Le Bar à Nenette</h3>             <p style="margin-top: 0;"><strong>Note :</strong> 4.5/5 (273 avis)</p>             <p><strong>Adresse :</strong> 26 Rue de Lappe, Paris</p>             <p><strong>Description :</strong> Pas de description disponible</p>         </div>         </div>`)[0];
+                popup_551dbdaba13f88ca2fe13a7658dc1d47.setContent(html_f3794d459e582fcfb7b206e331aecae9);
+            
+        
+
+        marker_07183e86dede9e0791be9f03acf33ccb.bindPopup(popup_551dbdaba13f88ca2fe13a7658dc1d47)
+        ;
+
+        
+    
+    
+            var marker_e0adb8e1a83e67d2bfce5d4cfc7d240d = L.marker(
+                [48.85548319999999, 2.3717382],
+                {}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var icon_adbc687205b4ebf741f69ac55cdb4cfe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e0adb8e1a83e67d2bfce5d4cfc7d240d.setIcon(icon_adbc687205b4ebf741f69ac55cdb4cfe);
+        
+    
+        var popup_620accca122505d1db83fcd9ca8860cb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e0fd20f67780ec61a752c3f6c6833fcd = $(`<div id="html_e0fd20f67780ec61a752c3f6c6833fcd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; font-size: 14px; width: 250px;">             <h3 style="margin-bottom: 5px;">The Honey Moon</h3>             <p style="margin-top: 0;"><strong>Note :</strong> 4.8/5 (123 avis)</p>             <p><strong>Adresse :</strong> 15 Rue St Sabin, Paris</p>             <p><strong>Description :</strong> Pas de description disponible</p>         </div>         </div>`)[0];
+                popup_620accca122505d1db83fcd9ca8860cb.setContent(html_e0fd20f67780ec61a752c3f6c6833fcd);
+            
+        
+
+        marker_e0adb8e1a83e67d2bfce5d4cfc7d240d.bindPopup(popup_620accca122505d1db83fcd9ca8860cb)
+        ;
+
+        
+    
+    
+            var poly_line_88b2731c2bc05d41198abf1ac7defc95 = L.polyline(
+                [[48.85761549999999, 2.3763229], [48.8572775, 2.3755208]],
+                {"bubblingMouseEvents": true, "color": "hsl(0, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(0, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_23273a1fbe71ed4a74c9430b3e8dbf61 = L.polyline(
+                [[48.85761549999999, 2.3763229], [48.855674, 2.3717256], [48.854459, 2.3714483], [48.85442279999999, 2.3714891], [48.8534151, 2.3705094]],
+                {"bubblingMouseEvents": true, "color": "hsl(0, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(0, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_9abc6e38df9a8df9c3ed1da751af8803 = L.polyline(
+                [[48.85761549999999, 2.3763229], [48.855674, 2.3717256], [48.854459, 2.3714483], [48.8543215, 2.371504], [48.853948, 2.3722713]],
+                {"bubblingMouseEvents": true, "color": "hsl(0, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(0, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_a9deeb40dc0e75ed9a3488c273c4e244 = L.polyline(
+                [[48.85761549999999, 2.3763229], [48.855674, 2.3717256], [48.854459, 2.3714483], [48.8543215, 2.371504], [48.853948, 2.3722713]],
+                {"bubblingMouseEvents": true, "color": "hsl(0, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(0, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_59632caaf14b62f0adef3f5e1091c595 = L.polyline(
+                [[48.85761549999999, 2.3763229], [48.855674, 2.3717256], [48.854459, 2.3714483], [48.85429, 2.3714558], [48.85388349999999, 2.3722905]],
+                {"bubblingMouseEvents": true, "color": "hsl(0, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(0, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_7187b4c17ac1529f7c3898980fdfb555 = L.polyline(
+                [[48.85761549999999, 2.3763229], [48.855674, 2.3717256], [48.854459, 2.3714483], [48.85429, 2.3714558], [48.85388349999999, 2.3722905]],
+                {"bubblingMouseEvents": true, "color": "hsl(0, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(0, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_3a019495d69def9d56584fdc32dc54eb = L.polyline(
+                [[48.85761549999999, 2.3763229], [48.8563822, 2.3734826], [48.8555357, 2.3743454], [48.8547855, 2.3726583], [48.8542957, 2.3733101], [48.8537553, 2.3726698]],
+                {"bubblingMouseEvents": true, "color": "hsl(0, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(0, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_6b97d985cf4b57018d9e09305313ee0e = L.polyline(
+                [[48.85761549999999, 2.3763229], [48.8578807, 2.3769587], [48.8567879, 2.3778167], [48.8559899, 2.3755205]],
+                {"bubblingMouseEvents": true, "color": "hsl(0, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(0, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_451d6172dfb0bc26915ea0fe5963c608 = L.polyline(
+                [[48.85761549999999, 2.3763229], [48.855674, 2.3717256], [48.854459, 2.3714483], [48.85429, 2.3714558], [48.8533581, 2.3733751]],
+                {"bubblingMouseEvents": true, "color": "hsl(0, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(0, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_57017817737e6537eef20af578b74f95 = L.polyline(
+                [[48.85761549999999, 2.3763229], [48.8556372, 2.3716375], [48.8555237, 2.3717572]],
+                {"bubblingMouseEvents": true, "color": "hsl(0, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(0, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_de4494ec80ead8c465d8c26ab2cc3bfd = L.polyline(
+                [[48.8556111, 2.3637875], [48.856414, 2.3643088], [48.8562477, 2.365024], [48.8560037, 2.3664797], [48.8557012, 2.3684082], [48.8555521, 2.369794], [48.8572775, 2.3755208]],
+                {"bubblingMouseEvents": true, "color": "hsl(120, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(120, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_53bd4e04768e144f5ec1f71e6e6106e0 = L.polyline(
+                [[48.8556111, 2.3637875], [48.85462159999999, 2.3630576], [48.8533638, 2.3682963], [48.853777, 2.3684821], [48.85364130000001, 2.3706137], [48.8534151, 2.3705094]],
+                {"bubblingMouseEvents": true, "color": "hsl(120, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(120, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_e14f3950e9913f4a8a30eb437e83e4d5 = L.polyline(
+                [[48.8556111, 2.3637875], [48.856414, 2.3643088], [48.8562477, 2.365024], [48.8560037, 2.3664797], [48.8557012, 2.3684082], [48.8555387, 2.3698138], [48.8553039, 2.3697071], [48.8550615, 2.3702064], [48.8542908, 2.3714588], [48.853948, 2.3722713]],
+                {"bubblingMouseEvents": true, "color": "hsl(120, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(120, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_b05ddd0ebe43373736044e6dcbfa5454 = L.polyline(
+                [[48.8556111, 2.3637875], [48.856414, 2.3643088], [48.8562477, 2.365024], [48.8560037, 2.3664797], [48.8557012, 2.3684082], [48.8555387, 2.3698138], [48.8553039, 2.3697071], [48.8550615, 2.3702064], [48.8542908, 2.3714588], [48.853948, 2.3722713]],
+                {"bubblingMouseEvents": true, "color": "hsl(120, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(120, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_d6cc0337dde90a17ff7364d724b8dc02 = L.polyline(
+                [[48.8556111, 2.3637875], [48.856414, 2.3643088], [48.8562477, 2.365024], [48.8560037, 2.3664797], [48.8557012, 2.3684082], [48.8555387, 2.3698138], [48.8553039, 2.3697071], [48.8550615, 2.3702064], [48.8542954, 2.3714517], [48.85388349999999, 2.3722905]],
+                {"bubblingMouseEvents": true, "color": "hsl(120, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(120, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_bd2e3871228e3aaa128d62bf26cfbbb6 = L.polyline(
+                [[48.8556111, 2.3637875], [48.856414, 2.3643088], [48.8562477, 2.365024], [48.8560037, 2.3664797], [48.8557012, 2.3684082], [48.8555387, 2.3698138], [48.8553039, 2.3697071], [48.8550615, 2.3702064], [48.8542954, 2.3714517], [48.85388349999999, 2.3722905]],
+                {"bubblingMouseEvents": true, "color": "hsl(120, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(120, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_e718b1276a9130077f8a5424f28eb11c = L.polyline(
+                [[48.8556111, 2.3637875], [48.856414, 2.3643088], [48.8562477, 2.365024], [48.8560037, 2.3664797], [48.8557012, 2.3684082], [48.8555387, 2.3698138], [48.8553039, 2.3697071], [48.8550615, 2.3702064], [48.8542908, 2.3714588], [48.853755, 2.3726669]],
+                {"bubblingMouseEvents": true, "color": "hsl(120, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(120, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_7d3342371e93cb9873ae66eafa4bc63b = L.polyline(
+                [[48.8556111, 2.3637875], [48.856414, 2.3643088], [48.8562477, 2.365024], [48.8560037, 2.3664797], [48.8557012, 2.3684082], [48.8555521, 2.369794], [48.856444, 2.3733835], [48.8555472, 2.3743352], [48.8559899, 2.3755205]],
+                {"bubblingMouseEvents": true, "color": "hsl(120, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(120, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_a9378575f754fb580ed92747211415ee = L.polyline(
+                [[48.8556111, 2.3637875], [48.856414, 2.3643088], [48.8562477, 2.365024], [48.8560037, 2.3664797], [48.8557012, 2.3684082], [48.8555387, 2.3698138], [48.8553039, 2.3697071], [48.8550615, 2.3702064], [48.8542954, 2.3714517], [48.8533581, 2.3733751]],
+                {"bubblingMouseEvents": true, "color": "hsl(120, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(120, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_cbe2e909f027a75a498acc79f3c8bb6e = L.polyline(
+                [[48.8556111, 2.3637875], [48.856414, 2.3643088], [48.8562477, 2.365024], [48.8560037, 2.3664797], [48.8557012, 2.3684082], [48.8555521, 2.369794], [48.8557037, 2.3715499], [48.8555237, 2.3717572]],
+                {"bubblingMouseEvents": true, "color": "hsl(120, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(120, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_059efcbe65d7dab50e40e58952403a04 = L.polyline(
+                [[48.8479999, 2.3878886], [48.847495, 2.3872391], [48.84745299999999, 2.3867974], [48.8500294, 2.3847667], [48.8499942, 2.3849343], [48.852604, 2.3833062], [48.85242299999999, 2.3815924], [48.8524604, 2.3811487], [48.8536362, 2.3804253], [48.8557101, 2.3787927], [48.8559093, 2.3788975], [48.8568142, 2.3778052], [48.8578807, 2.3769587], [48.8572775, 2.3755208]],
+                {"bubblingMouseEvents": true, "color": "hsl(240, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(240, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_484f1fbef3e4c7782306ada53c5f5d95 = L.polyline(
+                [[48.8479999, 2.3878886], [48.847495, 2.3872391], [48.84745299999999, 2.3867974], [48.8499609, 2.3847253], [48.8533366, 2.3703953], [48.8534385, 2.3705311]],
+                {"bubblingMouseEvents": true, "color": "hsl(240, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(240, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_54c69c7025cc0cdecd9ac7a17618bab6 = L.polyline(
+                [[48.8479999, 2.3878886], [48.847495, 2.3872391], [48.84745299999999, 2.3867974], [48.8499609, 2.3847253], [48.8517656, 2.3739266], [48.8528405, 2.3745886], [48.853948, 2.3722713]],
+                {"bubblingMouseEvents": true, "color": "hsl(240, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(240, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_f4c12ea640959ec5a875a9284f6a2896 = L.polyline(
+                [[48.8479999, 2.3878886], [48.847495, 2.3872391], [48.84745299999999, 2.3867974], [48.8499609, 2.3847253], [48.8517656, 2.3739266], [48.8528405, 2.3745886], [48.853948, 2.3722713]],
+                {"bubblingMouseEvents": true, "color": "hsl(240, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(240, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_6f0f0b2b1dd72019934e68da1dfbc7ff = L.polyline(
+                [[48.8479999, 2.3878886], [48.847495, 2.3872391], [48.84745299999999, 2.3867974], [48.8499609, 2.3847253], [48.8517656, 2.3739266], [48.8527881, 2.3745507], [48.85388349999999, 2.3722905]],
+                {"bubblingMouseEvents": true, "color": "hsl(240, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(240, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_ed1ddbdd8a09d5c407536f6cbfa169ad = L.polyline(
+                [[48.8479999, 2.3878886], [48.847495, 2.3872391], [48.84745299999999, 2.3867974], [48.8499609, 2.3847253], [48.8517656, 2.3739266], [48.8527881, 2.3745507], [48.85388349999999, 2.3722905]],
+                {"bubblingMouseEvents": true, "color": "hsl(240, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(240, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_0c70404d7e6dc41c76c2ab2f8868d45c = L.polyline(
+                [[48.8479999, 2.3878886], [48.847495, 2.3872391], [48.84745299999999, 2.3867974], [48.8499609, 2.3847253], [48.8517656, 2.3739266], [48.8528405, 2.3745886], [48.8537213, 2.3727359]],
+                {"bubblingMouseEvents": true, "color": "hsl(240, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(240, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_76036a331d43ea67484068650fd7b509 = L.polyline(
+                [[48.8479999, 2.3878886], [48.847495, 2.3872391], [48.84745299999999, 2.3867974], [48.8499609, 2.3847253], [48.8502522, 2.3841974], [48.8502522, 2.3841974], [48.8540004, 2.3821358], [48.8533449, 2.3770104], [48.85584189999999, 2.3751461], [48.8559899, 2.3755205]],
+                {"bubblingMouseEvents": true, "color": "hsl(240, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(240, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_056fb23c71e6f97c80dcc17afc1af322 = L.polyline(
+                [[48.8479999, 2.3878886], [48.847495, 2.3872391], [48.84745299999999, 2.3867974], [48.8499609, 2.3847253], [48.8517656, 2.3739266], [48.8527881, 2.3745507], [48.8533581, 2.3733751]],
+                {"bubblingMouseEvents": true, "color": "hsl(240, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(240, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+    
+            var poly_line_e35f845ec74f7cee94d5da239d87464d = L.polyline(
+                [[48.8479999, 2.3878886], [48.847495, 2.3872391], [48.84745299999999, 2.3867974], [48.8499609, 2.3847253], [48.8517656, 2.3739266], [48.8528405, 2.3745886], [48.854351, 2.3715986], [48.8545039, 2.3713658], [48.8555032, 2.3717839]],
+                {"bubblingMouseEvents": true, "color": "hsl(240, 50%, 50%)", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hsl(240, 50%, 50%)", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43b6f3d0b7150204ef15e8a562312e0d);
+        
+</script>
+</html>
